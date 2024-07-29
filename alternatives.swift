@@ -1,17 +1,17 @@
 //
-//  ContentView.swift
+//  alternatives.swift
 //  finalProjectC5
 //
-//  Created by Charvi Kanna on 7/26/24.
+//  Created by Charvi Kanna on 7/29/24.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct alternatives: View {
     var body: some View {
         NavigationStack {
-            Text("Intro page")
-            NavigationLink(destination: stories()) {
+            Text("alternatives")
+            NavigationLink(destination: resources()) {
                 /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Label Content@*/Text("Navigate")/*@END_MENU_TOKEN@*/
             }
         }
@@ -19,5 +19,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    alternatives()
 }
