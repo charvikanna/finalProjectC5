@@ -12,7 +12,7 @@ struct ContentView: View {
         NavigationStack {
             Text("Intro page")
             NavigationLink(destination: stories()) {
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Label Content@*/Text("Navigate")/*@END_MENU_TOKEN@*/
+                Text("Next")
             }
         }
     }
