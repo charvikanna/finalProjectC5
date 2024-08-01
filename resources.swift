@@ -14,12 +14,12 @@ struct resources: View {
                 Color(red:158/255, green: 203/255, blue: 208/255).ignoresSafeArea()
                 
                 VStack {
-                    Text("Ways to Help")
+                    Text("Resources & Help Out")
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .foregroundColor(Color.black)
-                        .multilineTextAlignment(.leading).padding(-4)
-                    Text("____").foregroundColor(Color(red: 158/255, green: 203/255, blue: 208/255))
+                        .multilineTextAlignment(.leading)
+                    Text("____").foregroundColor(Color(red: 158/255, green: 203/255, blue: 208/255)).multilineTextAlignment(.leading)
                     
                     Text("1. Get Educated and Help Raise Awareness")
                         .fontWeight(.semibold)
@@ -36,6 +36,9 @@ struct resources: View {
                         }
                         Image("clipart").resizable(resizingMode: .stretch).frame(width: 160.0, height: 100.0)
                     }
+                    Text(" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.black).padding(3)
                     Text("2. Learn about Ways to Prevent & Help Out")
                         .fontWeight(.semibold)
                         .foregroundColor(Color.black)
@@ -57,9 +60,9 @@ struct resources: View {
                         .foregroundColor(Color.black).padding(3)
                         
                     //About US
-                    Text("Meet The Creators!")
+                    Text("--------")
                         .fontWeight(.bold)
-                        .foregroundColor(Color.black)
+                        .foregroundColor(Color(red: 158/255, green: 203/255, blue: 208/255))
                         .multilineTextAlignment(.leading)
                         .frame(width: 180, height: 30.0)
                 
@@ -91,7 +94,11 @@ struct resources: View {
                    }
                 }
                 
-                
+                Text("Meet The Creators:")
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.black)
+                    .multilineTextAlignment(.leading)
+                    .frame(width: 180, height: 30.0).position(x:100, y:455)
             }
         }
     }
